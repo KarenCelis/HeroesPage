@@ -9,12 +9,12 @@ export class OrderNamePipe implements PipeTransform {
   transform(value1: any): any {
 
 
-    return value1.sort((a, b) => {
-      if (a.name < b.name) {
+    return value1.sort((x, y) => {
+      if (x.name < y.name) {
         return -1;
 
       }
-      if (a.name> b.name) {
+      if (x.name > y.name) {
         return 1;
       }
       return 0;

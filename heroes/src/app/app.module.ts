@@ -10,6 +10,9 @@ import { TitlePipe } from './pipes/title.pipe';
 import {HttpClientModule} from '@angular/common/http';
 import { OrderApparencePipe } from './pipes/order-apparence.pipe';
 import { OrderNamePipe } from './pipes/order-name.pipe';
+import { SearchNamePipe } from './pipes/search-name.pipe';
+import { SearchApparencePipe } from './pipes/search-apparence.pipe';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +20,15 @@ import { OrderNamePipe } from './pipes/order-name.pipe';
     DetailsComponent,
     TitlePipe,
     OrderApparencePipe,
-    OrderNamePipe
+    OrderNamePipe,
+    SearchNamePipe,
+    SearchApparencePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

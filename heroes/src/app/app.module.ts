@@ -8,12 +8,14 @@ import { DetailsComponent } from './pages/details/details.component';
 import { TitlePipe } from './pipes/title.pipe';
 
 import {HttpClientModule} from '@angular/common/http';
+import { OrderApparencePipe } from './pipes/order-apparence.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     DetailsComponent,
-    TitlePipe
+    TitlePipe,
+    OrderApparencePipe
   ],
   imports: [
     BrowserModule,

@@ -25,7 +25,7 @@
       </select>
             <select class="form-control mx-sm-1 mb-2">
         <option value="">Mostrar por Apariencia</option>
-        <option value="{aparience.biography.alignment}" *ngFor= "let aparience of hs.heroes">{{aparience.biography.alignment}}</option>
+        <option value="{aparience.biography.alignment}" *ngFor= "let aparience of hs.heroes | orderApparence">{{aparience.biography.alignment}}</option>
 
         
       </select>

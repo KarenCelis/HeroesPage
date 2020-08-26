@@ -5,12 +5,17 @@ import {Heroe} from '../interfaces/heroe';
   providedIn: 'root'
 })
 export class HeroesService {
-  
+
 heroes: Heroe[] = [];
 
   constructor(private http: HttpClient) {
 this.loadHeroes();
    
+   }
+   details(id: string){
+
+
+    return this.http.get('https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/id/'+id+'.json');
    }
    loadHeroes(){
 

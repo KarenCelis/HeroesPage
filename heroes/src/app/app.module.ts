@@ -9,13 +9,15 @@ import { TitlePipe } from './pipes/title.pipe';
 
 import {HttpClientModule} from '@angular/common/http';
 import { OrderApparencePipe } from './pipes/order-apparence.pipe';
+import { OrderNamePipe } from './pipes/order-name.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     DetailsComponent,
     TitlePipe,
-    OrderApparencePipe
+    OrderApparencePipe,
+    OrderNamePipe
   ],
   imports: [
     BrowserModule,

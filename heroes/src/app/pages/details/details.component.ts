@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+    console.log('Im in details component');
+   }
 
   ngOnInit(): void {
   }

@@ -13,6 +13,8 @@ import { OrderNamePipe } from './pipes/order-name.pipe';
 import { SearchNamePipe } from './pipes/search-name.pipe';
 import { SearchApparencePipe } from './pipes/search-apparence.pipe';
 import {FormsModule} from '@angular/forms';
+import { QuitRepNamePipe } from './pipes/quit-rep-name.pipe';
+import { QuitRepAppaPipe } from './pipes/quit-rep-appa.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import {FormsModule} from '@angular/forms';
     OrderApparencePipe,
     OrderNamePipe,
     SearchNamePipe,
-    SearchApparencePipe
+    SearchApparencePipe,
+    QuitRepNamePipe,
+    QuitRepAppaPipe
   ],
   imports: [
     BrowserModule,

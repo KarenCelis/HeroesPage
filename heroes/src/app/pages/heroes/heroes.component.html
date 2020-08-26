@@ -20,12 +20,12 @@
         <p>
             <select class="form-control mx-sm-1 mb-2" [(ngModel)]="searchByName">
         <option value="">Mostrar por Nombre</option>
-        <option value="{{heroe.name}}" *ngFor= "let heroe of hs.heroes | orderName">{{heroe.name}}</option>
+        <option value="{{heroe.name}}" *ngFor= "let heroe of hs.heroes | orderName | quitRepAppa">{{heroe.name}}</option>
 
       </select>
             <select class="form-control mx-sm-1 mb-2" [(ngModel)]="buscarporApariencia">
         <option value="">Mostrar por Apariencia</option>
-        <option value="{{aparience.biography.alignment}}" *ngFor= "let aparience of hs.heroes | orderApparence">{{aparience.biography.alignment}}</option>
+        <option value="{{aparience.biography.alignment}}" *ngFor= "let aparience of hs.heroes | orderApparence | quitRepAppa">{{aparience.biography.alignment}}</option>
 
         
       </select>

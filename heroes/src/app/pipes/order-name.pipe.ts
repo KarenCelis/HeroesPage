@@ -6,10 +6,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class OrderNamePipe implements PipeTransform {
 
   
-  transform(value1: any): any {
+  transform(value2: any): any {
 
 
-    return value1.sort((x, y) => {
+    return value2.sort((x, y) => {
       if (x.name < y.name) {
         return -1;
 

@@ -14,7 +14,8 @@ export interface Heroe {
         male: string
       },
       biography:{
-        firstAppearance:string
+        firstAppearance:string,
+        alignment: string
       } ,
       images:{
 

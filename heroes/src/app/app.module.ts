@@ -7,6 +7,7 @@ import { HeroesComponent } from './pages/heroes/heroes.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { TitlePipe } from './pipes/title.pipe';
 
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,9 @@ import { TitlePipe } from './pipes/title.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
